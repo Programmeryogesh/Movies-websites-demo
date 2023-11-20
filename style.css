@@ -1,0 +1,227 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    background-color: #282c349c;
+    justify-content: space-between;
+    color: #fff;
+    padding: 0 10px;
+    height: 80px;
+}
+.navbar_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.search{
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+.fa-magnifying-glass{
+    font-size: 20px;
+}
+.btn{
+    background-color: black;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    
+}
+.navbar_wrapper input{
+    padding: 4px 0 4px 10px;
+    width:300px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    color: white;
+    background: none;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 10px;
+}
+.logo img{
+  width: 50px;
+}
+.textLogo span{
+    color: rgb(56, 224, 224);
+    font-size: 40px;
+}
+.textLogo{
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+
+.home {
+  padding: 2px;
+  outline: 0;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#fdde5c),
+    color-stop(#f8ab5e),
+    color-stop(#f56a62),
+    color-stop(#a176c8),
+    color-stop(#759beb),
+    color-stop(#65beb3),
+    to(#70db96)
+  );
+  background: linear-gradient(
+    to right,
+    #fdde5c,
+    #f8ab5e,
+    #f56a62,
+    #a176c8,
+    #759beb,
+    #65beb3,
+    #70db96
+  );
+  border-radius: 30px;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.home {
+  display: block;
+  padding: 10px 40px;
+  font-size: 17px;
+  font-weight: 500;
+  background: #ebebeb;
+  border-radius: 30px;
+}
+
+.section{
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+
+.movie_card{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #282c34;
+    color: #fff;
+    width: 245px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.9s;
+    margin: 10px 5px;
+}
+.movie_card:hover{
+    background-color: #fff;
+    color: black;
+    scale: 0.9;
+}
+.movie_card img{
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 245px;
+}
+
+.title{
+    font-size: 16px;
+    font-weight: 600;
+}
+.type{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+
+.hover{
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #282c34;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+.hover::before{
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowingHover 20s linear infinite;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      border-radius: 10px;
+}
+@keyframes glowingHover {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  .hover:active{
+    color: #000;
+  }
+  .hover:active::after{
+    background: transparent;
+  }
+  .hover:hover::before{
+    opacity: 1;
+  }
+  .hover::after{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #282c34;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  .btnNextPre{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }

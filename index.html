@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YogiWatch.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo">
+            <p class="textLogo"><span>Yogi</span>Watch</p>
+        </div>
+        <div class="navbar_wrapper">
+            <p class="home" id="home">Home</p>
+            <div class="search"><i class="fa-solid fa-magnifying-glass"></i> <form id="form"><input type="text"
+               id="searchInput" placeholder="Search for movies"></form></div>
+               <button class="btn" onclick="searchMovies()">Search</button>
+            <button class="btn">Sign in</button>
+        </div>
+    </header>
+
+
+    <div class="section" id="movieList">
+
+    </div>
+    <div  class="btnNextPre"><button class="hover" onclick="PrePage()"> <i class="fa-solid fa-arrow-left"></i> Pre Page</button>
+        <button class="hover"
+            onclick="nextPage()">Next Page <i class="fa-solid fa-arrow-right"></i></button></div>
+    <script src="https://kit.fontawesome.com/e117648c32.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+   
+</body>
+
+</html>
